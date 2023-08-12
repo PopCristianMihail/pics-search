@@ -1,10 +1,12 @@
 import SearchBar from './components/SearchBar'
 import React from 'react'
+import SearchImages from './api'
 
 function App() {
 
-  const onSubmit = (term) => {
-    console.log("Do a search  with ", term);
+  const onSubmit = async (term) => {
+    const result = await SearchImages(term);
+    console.log(result);
   }
 
   return (
