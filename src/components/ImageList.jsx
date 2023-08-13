@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageShow from './ImageShow';
+import './ImageList.css';
 
 function ImageList({images}) {
 
@@ -8,7 +9,7 @@ function ImageList({images}) {
   })
 
   return (
-    <div>{renderedImages}</div>
+    <div className='image-list'>{renderedImages}</div>
   )
 }
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './SearchBar.css';
 
 function SearchBar({onSubmit}){
 
@@ -15,8 +16,9 @@ function SearchBar({onSubmit}){
   }
 
   return (
-    <div>
+    <div className='search-bar'>
       <form onSubmit={handleFormSubmit}>
+        <label>Search an image by a term</label>
         <input value={term} onChange={handleChange} autoFocus/>
       </form>
     </div>
